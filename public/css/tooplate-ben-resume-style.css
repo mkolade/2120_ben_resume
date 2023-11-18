@@ -466,8 +466,13 @@ https://www.tooplate.com/view/2120-ben-resume
   #services {
     background: #eae8e8;
     padding-top: 0 !important;
+
   }
 
+#services img{
+    width: 90px;
+    height: 70px;
+  }
   .testimonials-image {
     margin: 0 1rem 1rem 1rem;
   }
