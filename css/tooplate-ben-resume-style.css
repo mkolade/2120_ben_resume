@@ -31,7 +31,7 @@ https://www.tooplate.com/view/2120-ben-resume
   }
 
   :root {
-    --primary-color:        #ffd500;
+    --primary-color:        rgba(0, 0, 255, 0.291);
     --white-color:          #ffffff;
     --dark-color:           #010101;
     --menu-bg-color:        #212529;
@@ -122,7 +122,7 @@ https://www.tooplate.com/view/2120-ben-resume
 
   /* CUSTOM BUTTON */
   .custom-btn {
-    background: var(--dark-color);
+    background: blue;
     border: none;
     border-radius: var(--border-radius-medium);
     color: var(--white-color);
@@ -130,12 +130,14 @@ https://www.tooplate.com/view/2120-ben-resume
     padding: 6px 36px 10px 36px;
     font-size: var(--button-font-size);
     white-space: nowrap;
+    transition: 0.5s ease-in-out;
   }
 
   .custom-btn:hover,
   .custom-btn:focus {
-    color: var(--dark-color);
-    background: var(--primary-color);
+    color: white;
+    background: rgb(91, 91, 236);
+    transition: 0.5s ease-in-out;
   }
 
 
@@ -173,7 +175,7 @@ https://www.tooplate.com/view/2120-ben-resume
   -----------------------------------------*/
 
   .navbar {
-    background: transparent;
+    background: rgba(0, 0, 0, 1) !important;
     padding: 0.3rem 1rem;
     transition: all 300ms ease-in-out;
     position: absolute;
@@ -193,17 +195,24 @@ https://www.tooplate.com/view/2120-ben-resume
 
   .navbar-brand {
     color: var(--white-color);
+    
     font-weight: var(--font-weight-light);
     font-size: var(--h4-font-size);
+    transition: 0.5s ease-in-out;
   }
+ .navbar-brand:hover{
+  color: white;
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+ }
 
-  .navbar .custom-btn {
-    background: var(--primary-color);
+  .navbar {
+    background: blue;
     color: var(--dark-color);
   }
 
   .contact-form #submit-button:hover,
-  .navbar .custom-btn:hover {
+  .navbar  {
     background: var(--dark-color);
     color: var(--white-color);
   }
@@ -215,12 +224,12 @@ https://www.tooplate.com/view/2120-ben-resume
 
   .nav-item .nav-link.active, 
   .nav-item .nav-link:hover {
-    color: var(--gray-color);
+    color: var(--white-color);
   }
 
   .nav-item .nav-link.active, 
   .nav-item .nav-link:hover {
-    border-bottom-color: var(--primary-color);
+    border-bottom-color: blue;
   }
 
   .nav-link {
@@ -238,6 +247,7 @@ https://www.tooplate.com/view/2120-ben-resume
     width: 30px;
     height: 35px;
     outline: none;
+    color: white !important;
   }
 
   .navbar-toggler:focus {
@@ -266,7 +276,8 @@ https://www.tooplate.com/view/2120-ben-resume
 
 
   .navbar-toggler .navbar-toggler-icon {
-    background: var(--white-color);
+    background: var(--white-color) !important;
+    color: white !important;
     transition: background 10ms 300ms ease;
     display: block;
     width: 30px;
