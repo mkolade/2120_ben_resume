@@ -325,13 +325,13 @@ https://www.tooplate.com/view/2120-ben-resume
     }
   }
   .hero{
-    background:rgba(0, 0, 0, 0.03);
+    background:rgba(0, 0, 0, 0.06);
     position: relative;
     margin-top: 70px;
   }
 
   .overlay{
-    position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -377,7 +377,17 @@ https://www.tooplate.com/view/2120-ben-resume
      ABOUT                
   -----------------------------------------*/
   #about{
-    background:rgba(0, 0, 0, 0.03);
+    background:rgba(0, 0, 0, 0.06);
+    padding-bottom: 20px !important;
+  }
+  #Background{
+    font-weight: 900;
+  }
+  #readmore1{
+    font-weight: 900;
+  }
+  #readmore1:hover,#readmore1:focus{
+    color: blue;
   }
   .about-third {
 	  margin: 2.2em -0.8em;
@@ -397,6 +407,22 @@ https://www.tooplate.com/view/2120-ben-resume
     margin-right: 1rem;
   }
 
+  #myInterests{
+  }
+  .mySecondInterest {
+    width: 100%;
+    border: 2px solid #3498db; /* Blue border */
+    border-radius: 15px;
+    color: #2c3e50; /* Dark gray text color */
+    background: transparent; /* Light gray background color */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .mySecondInterest:hover {
+    transform: scale(1.05); /* Slight scale-up on hover */
+  }
 
   /*---------------------------------------
      FAQ                 
@@ -436,8 +462,9 @@ https://www.tooplate.com/view/2120-ben-resume
      TESTIMONIALS               
   -----------------------------------------*/
 
-  .testimonials {
-    background: #f9f9f9;
+  #services {
+    background: #eae8e8;
+    padding-top: 0 !important;
   }
 
   .testimonials-image {
