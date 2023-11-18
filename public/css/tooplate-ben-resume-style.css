@@ -370,6 +370,7 @@ https://www.tooplate.com/view/2120-ben-resume
 
   #imgDiv img{
     border-radius: 20%;
+    border: 5px solid black;
   }
 
 
