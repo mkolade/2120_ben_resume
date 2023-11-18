@@ -325,7 +325,7 @@ https://www.tooplate.com/view/2120-ben-resume
     }
   }
   .hero{
-    background:rgba(0, 0, 0, 0.05);
+    background:rgba(0, 0, 0, 0.03);
     position: relative;
     margin-top: 70px;
   }
@@ -376,7 +376,9 @@ https://www.tooplate.com/view/2120-ben-resume
   /*---------------------------------------
      ABOUT                
   -----------------------------------------*/
-  
+  #about{
+    background:rgba(0, 0, 0, 0.03);
+  }
   .about-third {
 	  margin: 2.2em -0.8em;
   }
