@@ -31,7 +31,7 @@ https://www.tooplate.com/view/2120-ben-resume
   }
 
   :root {
-    --primary-color:        rgba(0, 0, 255, 0.291);
+    --primary-color:       blue;
     --white-color:          #ffffff;
     --dark-color:           #010101;
     --menu-bg-color:        #212529;
@@ -175,7 +175,7 @@ https://www.tooplate.com/view/2120-ben-resume
   -----------------------------------------*/
 
   .navbar {
-    background: rgba(0, 0, 0, 1) !important;
+    background: rgba(0, 0, 0, 0.8) !important;
     padding: 0.3rem 1rem;
     transition: all 300ms ease-in-out;
     position: absolute;
@@ -183,7 +183,7 @@ https://www.tooplate.com/view/2120-ben-resume
     top: 0;
     right: 0;
     left: 0;
-    opacity: 0;
+    opacity: 1;
   }
 
   .navbar.scroll {
@@ -312,7 +312,37 @@ https://www.tooplate.com/view/2120-ben-resume
   /*---------------------------------------
      HERO                
   -----------------------------------------*/
+  @media (max-width: 468px) {
+    .hero {
+      height: 100vh;
+    }
+  }
+  
+  /* Media query for screens with a minimum width of 1200 pixels */
+  @media (min-width: 469px) {
+    .hero {
+      height: 87vh;
+    }
+  }
+  .hero{
+    background:rgba(0, 0, 0, 0.05);
+    position: relative;
+    margin-top: 70px;
+  }
 
+  .overlay{
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
+  .hero-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
   .hero-title,
   .email-link {
     background: var(--dark-color);
@@ -329,11 +359,17 @@ https://www.tooplate.com/view/2120-ben-resume
     color: var(--dark-color);
     font-size: var(--h4-font-size);
     padding: 0.5rem 2rem 1rem 2rem;
+
   }
 
   .email-link:hover {
     background: var(--dark-color);
     color: var(--white-color);
+
+  }
+
+  #imgDiv img{
+    border-radius: 20%;
   }
 
 
