@@ -58,7 +58,9 @@ https://www.tooplate.com/view/2120-ben-resume
     --border-radius-medium: 80px;
     --border-radius-small:  40px;
   }
-
+  html{
+    scroll-behavior: smooth;
+  }
 
   body {
     font-family: var(--base-font-family);
@@ -380,6 +382,13 @@ https://www.tooplate.com/view/2120-ben-resume
   #about{
     background:rgba(0, 0, 0, 0.06);
     padding-bottom: 20px !important;
+    padding-top: 4rem;
+  }
+
+  #myJourney{
+    letter-spacing: 0.7px;
+    font-weight: 800;
+    color: #3498db;
   }
   #Background{
     font-weight: 900;
