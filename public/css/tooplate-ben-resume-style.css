@@ -504,10 +504,21 @@ https://www.tooplate.com/view/2120-ben-resume
     background: var(--primary-color);
   }
 
-
+  /*---------------------------------------
+     QUOTE               
+  -----------------------------------------*/
+  .quotes{
+    width: 50%;
+    text-align: center;
+    margin:0 auto;
+  }
   /*---------------------------------------
      CONTACT               
   -----------------------------------------*/
+
+  #contact{
+    background: url(../images/piggy.jpg);
+  }
   
   .contact-form .form-control {
     background: transparent;
