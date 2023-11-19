@@ -323,13 +323,14 @@ https://www.tooplate.com/view/2120-ben-resume
   /* Media query for screens with a minimum width of 1200 pixels */
   @media (min-width: 469px) {
     .hero {
-      height: 87vh;
+      
     }
   }
   .hero{
     background:rgba(0, 0, 0, 0.06);
     position: relative;
     margin-top: 70px;
+    height: 90vh;
   }
 
   .overlay{
