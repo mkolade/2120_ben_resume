@@ -53,3 +53,42 @@
     });   
      
   });
+
+  //bACK TO TOP
+  var backtotop = document.getElementById('backtotop');
+
+   window.addEventListener('scroll',() =>
+   {
+  
+    if(window.pageYOffset > 500)
+    {
+        visible();
+    }
+    else
+    {
+        notvisible();
+    }
+   })
+    
+
+
+function visible()
+{
+
+    var backtotop = document.getElementById('backtotop');
+
+    backtotop.setAttribute('class','backtotop active');
+}
+
+function notvisible()
+{
+
+    var backtotop = document.getElementById('backtotop');
+
+    backtotop.setAttribute('class','backtotop');
+}
+
+notvisible()
+
+
+

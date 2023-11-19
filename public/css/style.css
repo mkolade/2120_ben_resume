@@ -730,3 +730,38 @@ https://www.tooplate.com/view/2120-ben-resume
       padding: 0.3rem 2rem 0.6rem 2rem;
     }
   }
+
+  .backtotop{
+    background: black;
+    position: fixed;
+    bottom: 20px;
+    right: 32px;
+    width: 40px;
+    height: 40px;
+   
+    z-index: 1000;
+    color: rgba(255,255,255,.5);
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;   
+}
+
+.backtotop :hover{
+    color: #fff;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;   
+}
+
+.active{
+    opacity: 1;
+    pointer-events: all;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;   
+}
