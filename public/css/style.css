@@ -667,14 +667,34 @@ https://www.tooplate.com/view/2120-ben-resume
   }
   #testimDiv{
     width: 100%;
-    height: auto;
     background: #dbd9d9;
-    text-align: center;
     padding:90px 30px;
+    text-align: center;
   }
 
-  #testi img{
-    width: 100%;
+  #testimonial-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 88%;
+  }
+
+  #testimonial-item img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  #Background {
+    font-size: 2.2rem; /* Adjust the font size as needed */
+  }
+
+  /* Optional: Add some hover effect for the testimonial items */
+  #testimonial-item img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
   }
 
   /*---------------------------------------
