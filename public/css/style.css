@@ -124,10 +124,10 @@ https://www.tooplate.com/view/2120-ben-resume
 
   /* CUSTOM BUTTON */
   .custom-btn {
-    background: blue;
-    border: none;
+    background: rgb(2, 2, 123);
+    border: 1.5px solid white;
     border-radius: var(--border-radius-medium);
-    color: var(--white-color);
+    color: #f1f1f1;
     letter-spacing: 0.2px;
     padding: 6px 36px 10px 36px;
     font-size: var(--button-font-size);
@@ -177,7 +177,7 @@ https://www.tooplate.com/view/2120-ben-resume
   -----------------------------------------*/
 
   .navbar {
-    background: rgba(0, 0, 0, 0.8) !important;
+    background: blue!important;
     padding: 0.3rem 1rem;
     transition: all 300ms ease-in-out;
     position: absolute;
@@ -226,16 +226,16 @@ https://www.tooplate.com/view/2120-ben-resume
 
   .nav-item .nav-link.active, 
   .nav-item .nav-link:hover {
-    color: var(--white-color);
+    color: black;
   }
 
   .nav-item .nav-link.active, 
   .nav-item .nav-link:hover {
-    border-bottom-color: blue;
+    border-bottom-color: black;
   }
 
   .nav-link {
-    color: var(--gray-color);
+    color: var(--white-color);
     font-weight: var(--font-weight-light);
     font-size: var(--base-font-size);
     border-bottom: 1px solid transparent;
