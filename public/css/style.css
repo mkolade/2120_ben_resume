@@ -716,6 +716,7 @@ https://www.tooplate.com/view/2120-ben-resume
   #testimonial-img img{
     width: 100px;
     height: 100px;
+    border: 2px solid blue;
     border-radius: 100%;
   }
 
