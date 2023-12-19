@@ -537,7 +537,7 @@ https://www.tooplate.com/view/2120-ben-resume
 
   .somebackground p{
     line-height: 1.6em !important;
-    text-align: center;
+    text-align: start;
   }
 
   #seconAbout{
