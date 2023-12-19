@@ -679,16 +679,44 @@ https://www.tooplate.com/view/2120-ben-resume
     text-align: center;
   }
 
+  #myTestimonial{
+    width: 100%;
+  }
+
   #testimonial-item {
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px 20px;
-    width: 88%;
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
   }
-
+  #testimonial-text{
+    width: 65%;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  #testimonial-text h4{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  #testimonial-text p{
+    line-height: 20px;
+    font-size: 16px;
+    text-align: start;
+  }
+  #testimonial-img{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   #testimonial-img img{
-    max-width: 70px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
   }
 
   #Background {
