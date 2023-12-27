@@ -108,6 +108,15 @@ https://www.tooplate.com/view/2120-ben-resume
     letter-spacing: 0.3px;
     line-height: 2em;
   }
+  p,h1,h2,h3,h4,h5,h6{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .activeElem{
+    opacity: 1;
+    transform: translateY(0);
+  }
 
   .section-padding {
     padding: 6rem 0;

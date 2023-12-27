@@ -96,9 +96,10 @@ notvisible()
 document.addEventListener("DOMContentLoaded", function() {
     var image = document.querySelector(".heroImg");
     var heroText = document.querySelector(".hero-text");
+    var textElements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6');
   
     //Hero image
-    var observer = new IntersectionObserver(function(entries, observer) {
+    var heroObserver = new IntersectionObserver(function(entries, observer) {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
           image.classList.add("image-reveal");
@@ -108,10 +109,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     });
-    observer.observe(image);
+    heroObserver.observe(image);
 
     //Hero texts
-    var observer = new IntersectionObserver(function(entries, observer) {
+    var heroTextObserver  = new IntersectionObserver(function(entries, observer) {
         entries.forEach(function(entry) {
             if (entry.isIntersecting) {
             heroText.classList.add("text-reveal");
@@ -121,5 +122,22 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-    observer.observe(heroText);
+    heroTextObserver .observe(heroText);
+
+     //Text elements
+     var textObserver  = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                textElements.forEach((element) =>{
+                    element.classList.add("activeElem");
+                });
+                //observer.unobserve(entry.target);
+            }else{
+                textElements.forEach((element) =>{
+                    element.classList.remove("activeElem");
+                });
+            }
+        });
+    });
+    textObserver.observe(document.body);
   });
