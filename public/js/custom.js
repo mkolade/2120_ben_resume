@@ -92,3 +92,34 @@ notvisible()
 
 
 
+//ANIMATIONS
+document.addEventListener("DOMContentLoaded", function() {
+    var image = document.querySelector(".heroImg");
+    var heroText = document.querySelector(".hero-text");
+  
+    //Hero image
+    var observer = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          image.classList.add("image-reveal");
+          //observer.unobserve(entry.target);
+        }else{
+            image.classList.remove("image-reveal");
+        }
+      });
+    });
+    observer.observe(image);
+
+    //Hero texts
+    var observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+            heroText.classList.add("text-reveal");
+            //observer.unobserve(entry.target);
+            }else{
+                heroText.classList.remove("text-reveal");
+            }
+        });
+    });
+    observer.observe(heroText);
+  });
