@@ -96,7 +96,6 @@ notvisible()
 document.addEventListener("DOMContentLoaded", function() {
     var image = document.querySelector(".heroImg");
     var heroText = document.querySelector(".hero-text");
-    var textElements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6');
   
     //Hero image
     var heroObserver = new IntersectionObserver(function(entries, observer) {
@@ -123,21 +122,50 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
     heroTextObserver .observe(heroText);
+});
 
-     //Text elements
-     var textObserver  = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-                textElements.forEach((element) =>{
-                    element.classList.add("activeElem");
-                });
-                //observer.unobserve(entry.target);
-            }else{
-                textElements.forEach((element) =>{
-                    element.classList.remove("activeElem");
-                });
-            }
-        });
+
+var sections = document.querySelectorAll('section');
+var sectionObservers = [];
+sections.forEach(function(section) {
+  var sectionObserver = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        section.classList.add("visible");
+      } else {
+        section.classList.remove("visible");
+      }
     });
-    textObserver.observe(document.body);
   });
+
+  sectionObservers.push(sectionObserver);
+  sectionObserver.observe(section);
+});
+
+var textElements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6');
+// Text elements
+var textObservers = [];
+textElements.forEach(function(element) {
+  var textObserver = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        element.classList.add("activeElem");
+      } else {
+        element.classList.remove("activeElem");
+      }
+    });
+  });
+
+  textObservers.push(textObserver);
+  textObserver.observe(element);
+});
+
+
+
+
+  // Hide preloader when content is loaded
+window.addEventListener('load', function() {
+    var preloader = document.getElementById('preloader');
+    preloader.classList.add('loaded');
+  });
+  
