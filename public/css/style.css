@@ -341,7 +341,7 @@ https://www.tooplate.com/view/2120-ben-resume
     justify-content: center;
     opacity: 0;
     transform: translateX(300px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition: opacity 3s ease, transform 0.8s ease;
     overflow-x: hidden;
   }
   .text-reveal {
