@@ -150,6 +150,7 @@ textElements.forEach(function(element) {
     entries.forEach(function(entry) {
       if (entry.isIntersecting) {
         element.classList.add("activeElem");
+        textObserver.unobserve(entry.target);
       } else {
         element.classList.remove("activeElem");
       }
